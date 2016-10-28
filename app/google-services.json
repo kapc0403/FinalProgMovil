@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "615279196969",
+    "firebase_url": "https://finalpm-80956.firebaseio.com",
+    "project_id": "finalpm-80956",
+    "storage_bucket": "finalpm-80956.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615279196969:android:c5c9eef42eb09714",
+        "android_client_info": {
+          "package_name": "com.example.kevinandresprieto.finalpm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615279196969-fu5m1igrvmae1ttvus1fatd7camvth2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3Ms5jDCIu0KrnINePaBUiB7r1eBQuZM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
