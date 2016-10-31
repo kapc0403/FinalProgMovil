@@ -16,12 +16,18 @@ import com.google.firebase.messaging.RemoteMessage;
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Main2Activity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
         notificationBuilder.setContentTitle("PM Notificaciones");
         notificationBuilder.setContentText(remoteMessage.getNotification().getBody());
+
+
+        String msj = remoteMessage.getNotification().getBody();
+        intent.putExtra("msj", msj);
+
+
         notificationBuilder.setAutoCancel(true);
         notificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
         notificationBuilder.setContentIntent(pendingIntent);
